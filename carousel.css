@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Raleway;
+    src: url("public/fonts/raleway/Raleway-Light_0.ttf");
+}
+.container {
+    margin-top: -100px !important;
+}
+.row {
+    margin-bottom: 30px;
+    border: 2px dashed #5b4c5c;
+    border-radius: 10px;
+    padding: 6px;
+    text-decoration: none;
+}
+h2 {
+    margin-left: -15px;
+    margin-bottom: 10px;
+}
+.explanation {
+    font-size: 16px;
+    margin-bottom: 20px;
+}

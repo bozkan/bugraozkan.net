@@ -1,0 +1,41 @@
+{
+    "goalcolor": "#d62728",
+    "assistcolor": "#332328",
+    "values": [
+        {
+            "team" : "Arsenal" ,
+            "goals" : 18,
+            "corners" : 33
+        } ,
+        {
+            "team" : "Aston Villa" ,
+            "goals" : 8,
+            "corners" : 24
+        } ,
+        {
+            "team" : "Chelsea" ,
+            "goals" : 12,
+            "corners" : 36
+        } ,
+        {
+            "team" : "Norwich City",
+            "goals" : 9,
+            "corners" : 21
+        } ,
+        {
+            "team" : "AFC Bournemouth" ,
+            "goals" : 8,
+            "corners" : 38
+        } ,
+        {
+            "team" : "Liverpool" ,
+            "goals" : 11,
+            "corners" : 42
+        } ,
+        {
+            "team" : "Manchester United" ,
+            "goals" : 17,
+            "corners" : 44
+        }
+    ]
+}

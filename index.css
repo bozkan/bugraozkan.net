@@ -1,0 +1,153 @@
+/* CSS declarations go here */
+@font-face {
+    font-family: Raleway;
+    src: url("public/fonts/raleway/Raleway-Light_0.ttf");
+}
+body {
+    font-size: 28px;
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
+    background-color: whitesmoke;
+    color: #5b4c5c;
+    width: calc(100% - 20px);
+    height: 100%;
+    margin: 0;
+    padding-left: 10px;
+}
+a {
+    border: 2px dashed #5b4c5c;
+    border-radius: 10px;
+    padding: 6px;
+    text-decoration: none;
+}
+.right {
+    margin-left: 60px;
+}
+
+.intro {
+    position: relative;
+    height: 80px;
+    margin-bottom: 25px;
+}
+.intro span {
+    display: inline-block;
+    margin-top: 2px;
+}
+.name-photo {
+    position: absolute;
+    top: 0;
+    left: 235px;
+    border: 2px dashed #5b4c5c;
+    border-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+    background-color: whitesmoke;
+    color: #5b4c5c;
+}
+.name {
+    padding: 0 10px;
+    text-align: center;
+}
+.photo img {
+    padding: 0 10px;
+    width: 165px;
+}
+a  {
+    color: #5b4c5c;
+}
+#nearent {
+    color: #3498db;
+}
+#teddycab {
+    color: #fdcc52;
+}
+#wobomo {
+    color: #C43031;
+}
+#feet {
+    color: #1E90FF;
+}
+#ballot {
+    color: #FF8080;
+}
+#kursu {
+    color: #DE4F4F;
+}
+#podcast {
+    color: #FF8080;
+}
+#kettle {
+    color: #527087;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    padding-top: 50px;
+}
+.lower-part > div {
+    margin-bottom: 30px;
+}
+.rsmall {
+    font-size: 18px;
+}
+
+@media only screen
+and (max-width : 650px) {
+    body {
+        font-size: 17px;
+    }
+    .name-photo {
+        position: absolute;
+        font-size: 19px;
+        top: 0px;
+        left: 148px;
+        border: 1px dashed #5b4c5c;
+        border-radius: 5px;
+        color: #5b4c5c;
+    }
+    a {
+        border: 1px dashed #5b4c5c;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .intro {
+        height: 40px;
+    }
+    .intro span {
+        margin-top: 3px;
+    }
+    .name {
+        padding: 0 5px;
+    }
+    .photo img {
+        padding: 2px 10px;
+        width: 113px;
+    }
+    .rsmall {
+        font-size: 12px;
+    }
+    .zort {
+        height: 40px !important;
+    }
+    .zortmax {
+        height: 205px !important;
+    }
+    .lower-part > div {
+        margin-bottom: 15px;
+    }
+    .container {
+        padding-top: 20px;
+    }
+}
+
+.zort {
+    height: 53px;
+}
+.zortmax {
+    height: 295px;
+}
+.zort, .zortmax {
+    display: none;
+}
