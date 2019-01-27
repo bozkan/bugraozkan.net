@@ -1,7 +1,7 @@
 /* CSS declarations go here */
 @font-face {
     font-family: Raleway;
-    src: url("public/fonts/raleway/Raleway-Light_0.ttf");
+    src: url("../public/fonts/raleway/Raleway-Light_0.ttf");
 }
 body {
     font-size: 28px;
@@ -128,10 +128,10 @@ and (max-width : 650px) {
     .rsmall {
         font-size: 12px;
     }
-    .zort {
+    .divided {
         height: 40px !important;
     }
-    .zortmax {
+    .divided-max {
         height: 205px !important;
     }
     .lower-part > div {
@@ -142,12 +142,12 @@ and (max-width : 650px) {
     }
 }
 
-.zort {
+.divided {
     height: 53px;
 }
-.zortmax {
+.divided-max {
     height: 295px;
 }
-.zort, .zortmax {
+.divided, .divided-max {
     display: none;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Bugra Ozkan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>
@@ -37,11 +37,11 @@
                 <a id='ballot' target="_new" href='https://play.google.com/store/apps/details?id=com.id185nkljlk799x1ksbnnm'>Ballot</a>
                 <a id='teddycab' target="_new" href='http://teddycab.com'>TeddyCab</a>
                 <a id='feet' target="_new" href='https://2000feet.com'>2000feet</a> and
-                <a href="public/kettle.png" target="_new" href='#'>Ce-Kettle</a>
+                <a href="public/img/kettle.png" target="_new" href='#'>Ce-Kettle</a>
             </div>
 
             <div>
-                Here is my <a id='cv' target="_new" href='public/CV_BugraOzkan.pdf'>CV</a> and <a id='thesis' target="_new" href='thesis.pdf'>Master's Thesis</a>
+                Here is my <a id='cv' target="_new" href='public/CV_BugraOzkan.pdf'>CV</a> and <a id='thesis' target="_new" href='public/thesis.pdf'>Master's Thesis</a>
             </div>
 
             <div>
@@ -53,8 +53,8 @@
         </div>
         <div id="clear" style="clear:both;"></div>
     </div>
-    <div class="zort"></div>
-    <div class="zortmax"></div>
+    <div class="divided"></div>
+    <div class="divided-max"></div>
 
     <script>
         (function($) {
@@ -75,34 +75,34 @@
         $(".name-photo").hover(function() {
             $('.photo').show();
             $(this).stop().animate({
-                height: $(".zortmax").height()
+                height: $(".divided-max").height()
             });
             $('.intro').stop().animate({
-                height: $(".zortmax").height()
+                height: $(".divided-max").height()
             });
         }, function() {
             $(this).stop().animate({
-                height: $(".zort").height()
+                height: $(".divided").height()
             });
             $('.intro').stop().animate({
-                height: $(".zort").height()
+                height: $(".divided").height()
             });
         });
 
         $(".name-photo").clickToggle(function() {
             $('.photo').show();
             $(this).stop().animate({
-                height: $(".zortmax").height()
+                height: $(".divided-max").height()
             });
             $('.intro').stop().animate({
-                height: $(".zortmax").height()
+                height: $(".divided-max").height()
             });
         }, function() {
             $(this).stop().animate({
-                height: $(".zort").height()
+                height: $(".divided").height()
             });
             $('.intro').stop().animate({
-                height: $(".zort").height()
+                height: $(".divided").height()
             });
         });
 
