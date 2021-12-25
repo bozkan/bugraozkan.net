@@ -1,90 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Bugra Ozkan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/index.css" rel="stylesheet">
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-</head>
-<body>
-    <div class="container">
-
-        <div class="intro">
-            <span>Hello, my name is</span>
-            <div class="name-photo">
-                <div class="name">Bugra Ozkan.</div>
-                <div class="photo"><img src="public/bozkan.jpg"></div>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bugra Ozkan</title>
+        <meta name="description" content="Personal website and portfolio of Dr. Nazli Gokce Terzioglu">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://bugraozkan.net/">
+        <link rel="alternate" href="/" type="application/rss+xml" title="Personal website and portfolio of Bugra Ozkan">
+        <link rel="alternate" href="/" type="application/rss+xml" title="Personal website and portfolio of Bugra Ozkan">
+        <meta name="title" content="Bugra Ozkan">
+        <meta name="description" content="Personal website and portfolio of Bugra Ozkan">
+        <meta name="keywords" content="bugra ozkan, entrepreneur, software developer, computer engineer, software, startup, london, podcast, incubator list">
+        <link rel="shortcut icon" href="public/favicon.png">
+        <link href="css/index.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="intro">
+                <span>Hello, my name is</span>
+                <div class="name-photo">
+                    <div class="name">Bugra Ozkan.</div>
+                    <div class="photo"><img src="public/bozkan.jpg"></div>
+                </div>
             </div>
+            <div class="lower-part">
+                <p>I am an<br>I worked at <a target="_blank" href='https://www.comparethemarket.com/'>CompareTheMarket</a> <a id="stratabet" target="_blank" href='https://web.archive.org/web/20180804154053/https://www.stratabet.com/'>StrataBet</a> <a href='/stratasport.html' target="_blank">Stratasport</a> and <a href='https://web.archive.org/web/20180105070758/https://www.nearent.com/' target="_blank">Nearent.</a></p>
+                    
+                <p>I love building passive income generating side projects.<br><a href='https://www.incubatorlist.com/' target="_blank">Incubator List</a> <a href='https://covidtripplanner.com' target="_blank">Covid Trip Planner</a> and <a href='https://episolo.com' target="_blank">Episolo</a> are the latest ones.</p>
+                <p>
+                    Here is my <a id='cv' target="_blank" href='public/CV_BugraOzkan.pdf'>CV</a> and <a id='thesis' target="_blank" href='public/thesis.pdf'>Master's Thesis</a> on Computer Vision & Machine Learning.
+                    <br>
+                    You can find me on
+                    <a id='linkedin' href='https://uk.linkedin.com/in/bugraozkan' target="_blank">LinkedIn</a>
+                    <a id='twitter' href='http://twitter.com/ozkanbugra' target="_blank">Twitter</a>
+                    or drop me an <a id="email" href="mailto:bugraozkan@live.com">e-mail.</a>
+                </p>
+            </div>
+            <div id="clear" style="clear:both;"></div>
         </div>
-
-        <div class="lower-part">
-            <p>I am a full-stack web developer with 6+ years of work experience.<br>I worked at <a target="_blank" href='https://www.comparethemarket.com/'>CompareTheMarket</a> <a id="stratabet" target="_blank" href='https://web.archive.org/web/20180804154053/https://www.stratabet.com/'>StrataBet</a> <a href='/stratasport.html' target="_blank">Stratasport</a> and <a href='https://web.archive.org/web/20180105070758/https://www.nearent.com/' target="_blank">Nearent.</a></p>
-                
-            <p>I love building side projects.<br><a href='https://www.incubatorlist.com/' target="_blank">Incubator List</a> <a href='https://covidtripplanner.com' target="_blank">Covid Trip Planner</a> and <a href='https://episolo.com' target="_blank">Episolo</a> are the latest ones.</p>
-            <p>
-                Here is my <a id='cv' target="_blank" href='public/CV_BugraOzkan.pdf'>CV</a> and <a id='thesis' target="_blank" href='public/thesis.pdf'>Master's Thesis</a> on Computer Vision & Machine Learning.
-                <br>
-                You can find me on
-                <a id='linkedin' href='https://uk.linkedin.com/in/bugraozkan' target="_blank">LinkedIn</a>
-                <a id='twitter' href='http://twitter.com/ozkanbugra' target="_blank">Twitter</a>
-                or drop me an <a id="email" href="mailto:bugraozkan@live.com">e-mail.</a>
-            </p>
-        </div>
-        <div id="clear" style="clear:both;"></div>
-    </div>
-    <div class="divided"></div>
-    <div class="divided-max"></div>
-
-    <script>
-        (function($) {
-            $.fn.clickToggle = function(func1, func2) {
-                var funcs = [func1, func2];
-                this.data('toggleclicked', 0);
-                this.click(function() {
-                    var data = $(this).data();
-                    var tc = data.toggleclicked;
-                    $.proxy(funcs[tc], this)();
-                    data.toggleclicked = (tc + 1) % 2;
-                });
-                return this;
-            };
-        }(jQuery));
-
-        $('.photo').hide();
-        $(".name-photo").hover(function() {
-            $('.photo').show();
-            $(this).stop().animate({
-                height: $(".divided-max").height()
-            });
-            $('.intro').stop().animate({
-                height: $(".divided-max").height()
-            });
-        }, function() {
-            $(this).stop().animate({
-                height: $(".divided").height()
-            });
-            $('.intro').stop().animate({
-                height: $(".divided").height()
-            });
-        });
-
-        $(".name-photo").clickToggle(function() {
-            $('.photo').show();
-            $(this).stop().animate({
-                height: $(".divided-max").height()
-            });
-            $('.intro').stop().animate({
-                height: $(".divided-max").height()
-            });
-        }, function() {
-            $(this).stop().animate({
-                height: $(".divided").height()
-            });
-            $('.intro').stop().animate({
-                height: $(".divided").height()
-            });
-        });
-    </script>
-</body>
+        <div class="divided"></div>
+        <div class="divided-max"></div>
+        <script>
+            !function(e){e.fn.clickToggle=function(i,t){var h=[i,t];return this.data("toggleclicked",0),this.click(function(){var i=e(this).data(),t=i.toggleclicked;e.proxy(h[t],this)(),i.toggleclicked=(t+1)%2}),this}}(jQuery),$(".photo").hide(),$(".name-photo").hover(function(){$(".photo").show(),$(this).stop().animate({height:$(".divided-max").height()}),$(".intro").stop().animate({height:$(".divided-max").height()})},function(){$(this).stop().animate({height:$(".divided").height()}),$(".intro").stop().animate({height:$(".divided").height()})}),$(".name-photo").clickToggle(function(){$(".photo").show(),$(this).stop().animate({height:$(".divided-max").height()}),$(".intro").stop().animate({height:$(".divided-max").height()})},function(){$(this).stop().animate({height:$(".divided").height()}),$(".intro").stop().animate({height:$(".divided").height()})});
+        </script>
+    </body>
 </html>
