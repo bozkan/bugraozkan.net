@@ -127,7 +127,7 @@ and (max-width : 650px) {
         font-size: 12px;
     }
     .divided {
-        height: 40px !important;
+        height: 35px !important;
     }
     .divided-max {
         height: 205px !important;
@@ -141,7 +141,7 @@ and (max-width : 650px) {
 }
 
 .divided {
-    height: 53px;
+    height: 50px;
 }
 .divided-max {
     height: 295px;
